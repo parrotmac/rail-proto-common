@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package annotations;
+
+import "google/protobuf/descriptor.proto";
+
+extend google.protobuf.MessageOptions {
+    RPCSemantics rpc_semantics = 72275522;
+}
+
+message RPCSemantics {
+    bool responseless_request = 1;
+    bool servicer_independent_message = 2;
+
+    // If set, regular RPCs will wait up to this many seconds for a response before canceling if no response has been received.
+    int64 max_roundtrip_seconds = 3;
+
+    // If set, the servicer may opt to ignore this message if it was delayed for too long.
+    int64 max_request_fulfillment_seconds = 4;
+}
