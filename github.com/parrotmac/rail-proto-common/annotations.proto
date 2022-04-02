@@ -9,8 +9,8 @@ extend google.protobuf.MethodOptions {
 }
 
 message RPCSemantics {
-    bool responseless_request = 1;
-    bool servicer_independent_message = 2;
+    bool request_only = 1;
+    bool response_only = 2;
 
     // If set, regular RPCs will wait up to this many seconds for a response before canceling if no response has been received.
     int64 max_roundtrip_seconds = 3;
