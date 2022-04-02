@@ -4,4 +4,4 @@ package rail.v1;
 
 message NoRequest {}
 
-message NoReply {}
+message NoResponse {}
