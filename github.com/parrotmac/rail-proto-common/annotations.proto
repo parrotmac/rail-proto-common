@@ -4,6 +4,8 @@ package rail.v1;
 
 import "google/protobuf/descriptor.proto";
 
+option go_package = "github.com/parrotmac/rail-proto-common/railv1";
+
 extend google.protobuf.MethodOptions {
     RPCSemantics rpc_semantics = 72275522;
 }

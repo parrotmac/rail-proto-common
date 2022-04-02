@@ -2,6 +2,10 @@ syntax = "proto3";
 
 package rail.v1;
 
+option go_package = "github.com/parrotmac/rail-proto-common/railv1";
+
+message X {}
+
 message NoRequest {}
 
 message NoResponse {}
