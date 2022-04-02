@@ -5,6 +5,6 @@ managed:
     default: github.com/parrotmac/rail-proto-common
 plugins:
   - name: go
-    out: gen/go
+    out: go
     opt:
       - paths=source_relative
