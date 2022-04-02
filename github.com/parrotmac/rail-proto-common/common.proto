@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+package rail.v1;
+
+message NoRequest {}
+
+message NoReply {}
