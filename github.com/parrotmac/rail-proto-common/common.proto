@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package rail.v1;
 
-option go_package = "github.com/parrotmac/rail-proto-common/railv1";
+option go_package = "github.com/parrotmac/rail-proto-common/go/github.com/parrotmac/rail-proto-common";
 
 message X {}
 
