@@ -15,9 +15,9 @@ message RPCSemantics {
     bool request_only = 1;
     bool response_only = 2;
 
-    // If set, regular RPCs will wait up to this many seconds for a response before canceling if no response has been received.
-    int64 max_roundtrip_seconds = 3;
+    // If set, regular RPCs will wait up to this many milliseconds for a response before canceling if no response has been received.
+    int64 max_roundtrip_milliseconds = 3;
 
     // If set, the servicer may opt to ignore this message if it was delayed for too long.
-    int64 max_request_fulfillment_seconds = 4;
+    int64 max_request_fulfillment_milliseconds = 4;
 }
